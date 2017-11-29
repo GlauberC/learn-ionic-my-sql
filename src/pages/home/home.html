@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Teste banco de dados</h2>
+  <ion-card>
+    <ion-card-content *ngFor="let user of users">
+      <h1>{{user.nome}}</h1>
+      <p>{{user.email}}</p>
+      <p>{{user.senha}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

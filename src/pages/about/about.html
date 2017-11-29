@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list inset>
+
+  <ion-item>
+    <ion-label>Nome</ion-label>
+    <ion-input type="text" [(ngModel)] = "data.nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>email</ion-label>
+    <ion-input type="text" [(ngModel)] = "data.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>senha</ion-label>
+    <ion-input type="password" [(ngModel)] = "data.senha"></ion-input>
+  </ion-item>
+  <button ion-button (click)="postData(data)">Cadastro</button>
+</ion-list>
+
+
+</ion-content>
